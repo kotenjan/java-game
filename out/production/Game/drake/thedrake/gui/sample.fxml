@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="base" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchor" stylesheets="@DrakeStyles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="drake.thedrake.gui.Controller">
+    <Pane fx:id="upperBar" layoutX="264.0" layoutY="-100.0" maxHeight="30.0" minHeight="30.0" prefHeight="30.0" styleClass="onTop" stylesheets="@DrakeStyles.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+         <Label fx:id="statusText" alignment="CENTER" layoutX="248.0" layoutY="8.0" prefHeight="16.0" prefWidth="105.0" textAlignment="CENTER" />
+      </children></Pane>
+    <Accordion layoutX="161.0" layoutY="254.0" />
+    <Button fx:id="drakeButt" mnemonicParsing="false" onMouseClicked="#homeScreen" styleClass="onTop" stylesheets="@DrakeStyles.css" text="The Drake" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="2.0" />
+    <Pane fx:id="hppPane" layoutX="30.0" layoutY="70.0" prefHeight="40.0" prefWidth="339.0" styleClass="gameBox" stylesheets="@DrakeStyles.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="70.0">
+        <Button fx:id="hppButt" layoutX="440.0" layoutY="5.0" maxWidth="95.0" minWidth="95.0" mnemonicParsing="false" onMouseClicked="#boardScene" prefWidth="95.0" styleClass="gameButton" stylesheets="@DrakeStyles.css" text="HRA-HPP" />
+        <TextField editable="false" focusTraversable="false" layoutX="7.0" layoutY="7.0" styleClass="textField1" stylesheets="@DrakeStyles.css" text="Hra proti počítači" />
+    </Pane>
+    <Pane fx:id="hdhPane" layoutX="30.0" layoutY="141.0" prefHeight="40.0" prefWidth="339.0" styleClass="gameBox" stylesheets="@DrakeStyles.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="110.0">
+        <Button fx:id="hdhButt" layoutX="440.0" layoutY="5.0" maxWidth="95.0" minWidth="95.0" mnemonicParsing="false" onMouseClicked="#boardScene" prefWidth="95.0" styleClass="gameButton" stylesheets="@DrakeStyles.css" text="HRA-HDH" />
+        <TextField editable="false" focusTraversable="false" layoutX="7.0" layoutY="7.0" styleClass="textField1" stylesheets="@DrakeStyles.css" text="Hra dvou hráčů" />
+    </Pane>
+    <Pane fx:id="hpiPane" layoutX="30.0" layoutY="200.0" prefHeight="40.0" prefWidth="339.0" styleClass="gameBox" stylesheets="@DrakeStyles.css" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="150.0">
+        <Button fx:id="hpiButt" layoutX="440.0" layoutY="5.0" maxWidth="95.0" minWidth="95.0" mnemonicParsing="false" onMouseClicked="#boardScene" prefWidth="95.0" styleClass="gameButton" stylesheets="@DrakeStyles.css" text="HRA-HPI" />
+        <TextField editable="false" focusTraversable="false" layoutX="7.0" layoutY="7.0" styleClass="textField1" stylesheets="@DrakeStyles.css" text="Hra po internetu" />
+    </Pane>
+    <Button fx:id="endButt" focusTraversable="false" layoutX="539.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#endApplication" styleClass="onTop" stylesheets="@DrakeStyles.css" text="Konec" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0" />
+    <GridPane fx:id="board" layoutX="200.0" layoutY="155.0" onMouseClicked="#clickGrid" visible="false" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="40.0">
+
+    </GridPane>
+    <Pane fx:id="playerA" layoutX="46.0" layoutY="267.0" onMouseClicked="#clickLeftStack" prefHeight="70.0" prefWidth="70.0" styleClass="gameBox" stylesheets="@DrakeStyles.css" visible="false" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0">
+      </Pane>
+    <Pane fx:id="playerB" layoutX="437.0" layoutY="240.0" minHeight="70.0" minWidth="70.0" onMouseClicked="#clickRightStack" prefHeight="70.0" prefWidth="70.0" styleClass="gameBox" stylesheets="@DrakeStyles.css" visible="false" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="30.0">
+      </Pane>
+
+</AnchorPane>

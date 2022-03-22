@@ -1,0 +1,57 @@
+.onTop {
+    -fx-background-color: #00FF00;
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-font-family: "Droid Sans Mono";
+    -fx-font-weight: bold;
+}
+
+.anchor {
+    -fx-background-color: #7F8471;
+}
+
+.textField1 {
+    -fx-font-family: "Droid Sans Mono";
+    -fx-font-weight: bold;
+    -fx-background-color: #AAAAAA;
+}
+
+.gameBox {
+    -fx-background-color: #AAAAAA;
+    -fx-border-color: #CCCCCC #666666 #666666 #CCCCCC;
+    -fx-border-style: solid;
+    -fx-padding: 2px;
+    -fx-border-width: 2px;
+    -fx-font-family: "Droid Sans Mono";
+    -fx-font-weight: bold;
+}
+
+.onTop:hover {
+    -fx-text-fill: white;
+}
+
+.onTop:pressed {
+    -fx-text-fill: gainsboro;
+}
+
+.gameButton {
+    -fx-background-color: #CCCCCC; padding: 5px;
+    -fx-text-align: center;
+    -fx-background-radius: 0 0 0 0;
+    -fx-border-width: 2;
+
+    -fx-border-color: #FFFFFF #666666 #666666 #FFFFFF;
+
+
+    -fx-display: block
+}
+
+.gameButton:pressed {
+    -fx-background-color: #AAAAAA;
+    -fx-border-color: #CCCCCC #666666 #666666 #CCCCCC;
+}
+
+.gameButton:hover {
+    -fx-text-fill: white;
+
+}
