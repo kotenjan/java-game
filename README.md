@@ -1,0 +1,1 @@
+This is an implementation of a Drake card game in Java using JavaFX for the graphical part of the app. 
